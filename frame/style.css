@@ -1,0 +1,78 @@
+@charset "utf-8";
+/*テーブル（ta1）
+---------------------------------------------------------------------------*/
+/*ta1設定*/
+.ta1 {
+	width: 100%;
+	margin: 0 auto 20px;
+}
+.ta1, .ta1 td, .ta1 th {
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #999;	/*テーブルの枠線の幅、線種、色*/
+	background: #fff;	/*背景色*/
+	padding: 5px 5px;	/*ボックス内の余白*/
+	word-break: break-all;
+}
+/*テーブル１行目に入った見出し部分*/
+.ta1 th.midasi {
+	width: auto;
+	background: #CCFFCC;	/*背景色*/
+}
+/*エラー専用テーブル１行目に入った見出し部分*/
+.ta1 th.error {
+	width: auto;
+	background: #ff5b5b !important;	/*背景色*/
+}
+/*ta1の左側ボックス*/
+.ta1 th {
+	width: 140px;	/*幅*/
+	font-weight: normal;
+}
+/*左側ボックスに画像を入れた場合の設定*/
+.ta1 th img {
+	width: 100%;
+}
+
+/*その他
+---------------------------------------------------------------------------*/
+.look {background: #c3b5a2;background: rgba(0,0,0,0.1);padding: 5px 10px;border-radius: 4px;}
+.mb15,.mb1em {margin-bottom: 15px !important;}
+.mb30 {margin-bottom: 30px !important;}
+.mb50 {margin-bottom: 50px !important;}
+.p0 {padding:0 !important;}
+.clear {clear: both;}
+ul.disc {padding: 0em 25px 15px;list-style: disc;}
+.color1, .color1 a {color: #b44f0d !important;}
+.pr {font-size: 10px;}
+.wl {width: 96%;}
+.ws {width: 50%;}
+.c {text-align: center;}
+.r {text-align: right;}
+.l {text-align: left;}
+.fl {float: left;}
+.fr {float: right;}
+.big1 {font-size: 50px;}
+.mini1 {font-size: 11px;display: inline-block;line-height: 1.5;}
+.sh {display: none;}
+#sh-sub {display: none;}
+
+
+
+/*画面幅が801px以上、かつ、高さが650px以下の場合の設定。
+左メニューが650px以下になると切れて見えなくなるので、固定からスクロール表示に切り替えます。
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:801px) and (max-height:650px){
+
+/*subブロック
+---------------------------------------------------------------------------*/
+#sub {
+	position: absolute;	/*固定からスクロール表示に変更*/
+	height: auto;
+}
+
+}
+
+
+
+/*画面幅800px以下の設定
